@@ -1,0 +1,32 @@
+# Todos los patrones de .gitignore (GIT-001)
+.env
+.env.*
+*.secret
+*.pem
+*.key
+*.cer
+*.crt
+*.pkcs12
+*.log
+logs/
+.venv/
+node_modules/
+vendor/
+__pycache__/
+.vscode/
+.idea/
+*.local
+coverage/
+*.test.log
+.DS_Store
+Thumbs.db
+
+# Diálogos y conversaciones (GIT-001, GIT-004)
+*_dialog.md
+*_chat.log
+conversation_*.txt
+
+# Temporales del agente
+*.tmp
+*.cache
+*.draft

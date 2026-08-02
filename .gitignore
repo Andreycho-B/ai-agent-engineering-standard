@@ -1,0 +1,34 @@
+# Entorno (GIT-001)
+.env
+.env.*
+*.secret
+
+# Claves y certificados
+*.pem
+*.key
+*.cer
+*.crt
+*.pkcs12
+
+# Logs
+*.log
+logs/
+
+# Dependencias y paquetes
+.venv/
+node_modules/
+vendor/
+__pycache__/
+
+# Configuración local
+.vscode/
+.idea/
+*.local
+
+# Pruebas
+coverage/
+*.test.log
+
+# Sistema
+.DS_Store
+Thumbs.db

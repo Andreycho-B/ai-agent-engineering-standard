@@ -86,3 +86,5 @@ Reporta vulnerabilidades siguiendo [SECURITY.md](SECURITY.md). Prohibido publica
 ## Licencia
 
 **Creative Commons Attribution 4.0 International (CC BY 4.0)** — ver [LICENSE](LICENSE).
+
+© 2026 [Andrey Rondón](https://github.com/Andreycho-B). Licenciado bajo CC BY 4.0.

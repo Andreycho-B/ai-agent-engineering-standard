@@ -86,3 +86,5 @@ Report vulnerabilities through [SECURITY.md](SECURITY.md). Publishing secrets or
 ## License
 
 **Creative Commons Attribution 4.0 International (CC BY 4.0)** — see [LICENSE](LICENSE).
+
+© 2026 [Andrey Rondón](https://github.com/Andreycho-B). Licensed under CC BY 4.0.

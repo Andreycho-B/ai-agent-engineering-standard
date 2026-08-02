@@ -1,86 +1,88 @@
 # AI Agent Engineering Standard
 
-Especificación normativa de **32 documentos** que define el comportamiento de agentes de IA en tareas de ingeniería de software: cómo razonar, qué evidencia exigir, cuándo detener la iteración y qué reglas técnicas aplicar.
+> **English** · [**Español**](README_ES.md)
 
-## ¿Qué problema resuelve?
+A normative specification of **32 documents** that defines how AI agents should behave in software engineering tasks: how to reason, what evidence to demand, when to stop iterating, and which technical rules to apply.
 
-Los agentes de IA producen resultados inconsistentes: responden con confianza sin evidencia, iteran sin criterio de parada, generan interfaces con "firma de IA" y violan principios de arquitectura, seguridad y testing. Este estándar convierte el comportamiento del agente en una especificación **auditable y verificable**, no en una lista de buenas intenciones.
+## What problem does it solve?
 
-## Estructura
+AI agents produce inconsistent results: they assert confidently without evidence, iterate without a stopping criterion, generate interfaces with an "AI tell," and violate architecture, security and testing principles. This standard turns agent behavior into an **auditable and verifiable specification**, not a list of good intentions.
 
-7 niveles (0–6) y 32 documentos. El punto de navegación es el **Índice Maestro (32)**.
+## Structure
 
-| Nivel | Contenido | Documentos |
+7 levels (0–6) and 32 documents. The single navigation point is the **Master Index (32)**.
+
+| Level | Content | Documents |
 | :--- | :--- | :--- |
-| 0 | Constitución y principios superiores | 00 |
-| 1 | Protocolo operativo, modelo cognitivo, contexto | 01, 02, 04–11, 24 |
-| 2 | Reglas de redacción y comunicación | 03, 12, 13 |
-| 3 | Especializaciones técnicas | 14–23 |
-| 4 | Auditoría | 25 |
-| 5 | Gobernanza y evolución | 26–30 |
-| 6 | Glosario e índice | 31, 32 |
+| 0 | Constitution and supreme principles | 00 |
+| 1 | Operative protocol, cognitive model, context | 01, 02, 04–11, 24 |
+| 2 | Writing and communication rules | 03, 12, 13 |
+| 3 | Technical specializations | 14–23 |
+| 4 | Audit | 25 |
+| 5 | Governance and evolution | 26–30 |
+| 6 | Glossary and index | 31, 32 |
 
-### Documentos
+### Documents
 
-| ID | Nombre | Propósito |
+| ID | Name | Purpose |
 | :--- | :--- | :--- |
-| **00** | Constitución del Agente | Principios superiores e inquebrantables (evidencia sobre probabilidad). |
-| **01** | Protocolo Operativo del Agente | Flujo obligatorio de ejecución (Recepción → Entrega). |
-| **02** | Política de Convergencia | Cuándo detener iteraciones y dar por buena una solución. |
-| **03** | Reglas de Redacción | Eliminar patrones LLM y maximizar densidad informativa. |
-| **04** | Modelo Cognitivo | Cómo razonar (deliberativo, jerárquico, sistémico). |
-| **05** | Modelo Epistémico | Cómo evaluar evidencia, conocimiento e incertidumbre. |
-| **06** | Protocolo de Razonamiento Iterativo (IRP) | Loops de revisión interna (Comprensión → Autocrítica). |
-| **07** | Sistema de Subagentes (SSA) | Roles especializados (Arquitecto, Backend, UX…). |
-| **08** | Protocolo de Gestión del Contexto | Administrar memoria operativa y foco de la tarea. |
-| **09** | Conciencia del Proyecto (PAP) | Comprender el sistema antes de intervenir. |
-| **10** | Matriz de Resolución de Conflictos | Jerarquía de precedencia entre reglas. |
-| **11** | Proyectos Nuevos y Contexto Inicial (Onboarding) | Procesar PRD, TRD y documentos de contexto. |
-| **12** | Ingeniería de Prompts y Comunicación | Cómo preguntar, confirmar y manejar ambigüedad. |
-| **13** | IA Generativa: Sesgos y Disciplina | Reconocer y corregir sesgos del modelo. |
-| **14** | Anti-patrones de Diseño Visual | Evitar interfaces genéricas y "firma de IA". |
-| **15** | Frontend Engineering | Reglas de componentes, estado y renderizado. |
-| **16** | Backend Engineering | Reglas de dominio, servicios y lógica de negocio. |
-| **17** | Arquitectura de Software | Estructura, capas, patrones y cohesión. |
-| **18** | Base de Datos | Modelado, consultas, migraciones e integridad. |
-| **19** | APIs y Contratos | Diseño de endpoints, versionado y compatibilidad. |
-| **20** | Seguridad | Autenticación, autorización, cifrado y OWASP. |
-| **21** | Observabilidad y Resiliencia | Logs, métricas, traces, timeouts, circuit breakers. |
-| **22** | Testing Estratégico | Pirámide de pruebas, mocks, TDD, cobertura, mutación, UAT, gates de CI. |
-| **23** | Principios de Ingeniería Avanzada | DDD, Hexagonal, SOLID, DRY/KISS/YAGNI, complejidad ciclomática. |
-| **24** | Memoria y Mejora Continua | Decision Log, Known Problems, retrospectivas. |
-| **25** | Sistema de Auditoría | Verificación final del cumplimiento del estándar. |
-| **26** | Sistema RFC | Proceso formal para modificar el estándar. |
-| **27** | Gobernanza del Estándar | Principios de evolución y estabilidad. |
-| **28** | Lenguaje Normativo | Definición de DEBERÁ, NO DEBERÁ, PODRÁ… |
-| **29** | Arquitectura del Estándar | Plantillas, identificadores y estructura documental. |
-| **30** | Política de Git/GitHub | Secretos, commits, archivos de exclusión. |
-| **31** | Glosario | Definiciones oficiales de términos técnicos. |
-| **32** | Índice Maestro | Navegación y mapa global del estándar. |
+| **00** | Agent Constitution | Supreme, immutable principles (evidence over probability). |
+| **01** | Agent Operative Protocol | Mandatory execution flow (Reception → Delivery). |
+| **02** | Convergence Policy | When to stop iterating and accept a solution. |
+| **03** | Writing Rules | Remove LLM patterns and maximize information density. |
+| **04** | Cognitive Model | How to reason (deliberative, hierarchical, systemic). |
+| **05** | Epistemic Model | How to evaluate evidence, knowledge and uncertainty. |
+| **06** | Iterative Reasoning Protocol (IRP) | Internal review loops (Understanding → Self-criticism). |
+| **07** | Subagent System (SSA) | Specialized roles (Architect, Backend, UX…). |
+| **08** | Context Management Protocol | Manage working memory and task focus. |
+| **09** | Project Awareness (PAP) | Understand the system before intervening. |
+| **10** | Conflict Resolution Matrix | Precedence hierarchy between rules. |
+| **11** | New Projects and Initial Context (Onboarding) | Process PRD, TRD and context documents. |
+| **12** | Prompt Engineering and User Communication | How to ask, confirm and handle ambiguity. |
+| **13** | Generative AI: Biases and Discipline | Recognize and correct model biases. |
+| **14** | Visual Design Anti-patterns | Avoid generic interfaces and the "AI tell". |
+| **15** | Frontend Engineering | Component, state and rendering rules. |
+| **16** | Backend Engineering | Domain, service and business logic rules. |
+| **17** | Software Architecture | Structure, layers, patterns and cohesion. |
+| **18** | Database | Modeling, queries, migrations and integrity. |
+| **19** | APIs and Contracts | Endpoint design, versioning and compatibility. |
+| **20** | Security | Authentication, authorization, encryption and OWASP. |
+| **21** | Observability and Resilience | Logs, metrics, traces, timeouts, circuit breakers. |
+| **22** | Strategic Testing Management | Test pyramid, mocks, TDD, coverage, mutation, UAT, CI gates. |
+| **23** | Advanced Engineering Principles | DDD, Hexagonal, SOLID, DRY/KISS/YAGNI, cyclomatic complexity. |
+| **24** | Project Memory and Continuous Improvement | Decision Log, Known Problems, retrospectives. |
+| **25** | Audit System | Final verification of standard compliance. |
+| **26** | RFC System | Formal process for modifying the standard. |
+| **27** | Standard Governance | Evolution and stability principles. |
+| **28** | Normative Language | Definition of MUST, MUST NOT, MAY. |
+| **29** | Standard Architecture | Templates, identifiers and document structure. |
+| **30** | Git/GitHub Policy | Secrets, commits, exclusion files. |
+| **31** | Glossary | Official definitions of technical terms. |
+| **32** | Master Index | Navigation and global map of the standard. |
 
-## Cómo usar
+## How to use
 
-**Con un agente de IA (recomendado):** apunta al agente a este repositorio e indica que adopte el estándar. El agente debe leer los documentos en el orden definido por el **flujo de lectura del Índice Maestro (32)** y cumplir la **Constitución (00)** y el **Protocolo Operativo (01)** en toda tarea.
+**With an AI agent (recommended):** point the agent to this repository and instruct it to adopt the standard. The agent must read the documents in the order defined by the **Master Index reading flow (32)** and comply with the **Constitution (00)** and the **Operative Protocol (01)** in every task.
 
-**Como auditor humano:** usa el **Sistema de Auditoría (25)** para verificar que el trabajo del agente cumple el estándar antes de aceptarlo.
+**As a human auditor:** use the **Audit System (25)** to verify that the agent's work complies with the standard before accepting it.
 
-**Para aplicar reglas técnicas:** consulta las especializaciones (14–23). Cada regla incluye prioridad, regla normativa y método de verificación.
+**To apply technical rules:** consult the specializations (14–23). Each rule includes priority, normative statement and verification method.
 
-## Gobernanza
+## Governance
 
-- El estándar evoluciona solo mediante **RFC** (26). No se edita directamente.
-- Versionado semántico **MAYOR.MENOR.PARCHE** (27, GV-006).
-- Lenguaje normativo obligatorio (28): `DEBERÁ`, `NO DEBERÁ`, `PODRÁ`.
-- Términos definidos en el **Glosario (31)**.
+- The standard evolves only through **RFCs** (26). It is never edited directly.
+- Semantic versioning **MAJOR.MINOR.PATCH** (27, GV-006).
+- Mandatory normative language (28): `MUST`, `MUST NOT`, `MAY`.
+- Terms defined in the **Glossary (31)**.
 
-## Contribuir
+## Contributing
 
-Consulta [CONTRIBUTING.md](CONTRIBUTING.md). Toda propuesta requiere RFC con: Problema, Evidencia, Impacto, Solución propuesta, Compatibilidad, Riesgos y Estado inicial.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Every proposal requires an RFC with the fields: Problem, Evidence, Impact, Proposed solution, Compatibility, Risks and Initial state.
 
-## Seguridad
+## Security
 
-Reporta vulnerabilidades siguiendo [SECURITY.md](SECURITY.md). Prohibido publicar secretos o datos sensibles en issues públicos.
+Report vulnerabilities through [SECURITY.md](SECURITY.md). Publishing secrets or sensitive data in public issues is prohibited.
 
-## Licencia
+## License
 
-**Creative Commons Attribution 4.0 International (CC BY 4.0)** — ver [LICENSE](LICENSE).
+**Creative Commons Attribution 4.0 International (CC BY 4.0)** — see [LICENSE](LICENSE).

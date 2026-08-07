@@ -4,6 +4,22 @@ Versionado semántico `MAYOR.MENOR.PARCHE` según GV-006 (27. Gobernanza del Est
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-08-07
+
+Anexo de referencia: mapeo del capítulo de Seguridad contra el OWASP Top 10 for Agentic Applications (2026). Cambio **PARCHE** (GV-006: contenido de referencia, sin cambio normativo), formalizado como RFC-2026-002 (estado **Provisional**).
+
+### Contenido
+
+- **20. Seguridad (v2.2):** nuevo "Anexo A. Mapeo de referencia — SEC ⇄ OWASP Top 10 for Agentic Applications (2026)". Tabla no normativa con las 10 categorías (ASI01–ASI10), tipo de cobertura (Directa / Parcial-comportamiento / No cubierta) y reglas del estándar que las atienden.
+- **32. Índice Maestro (v4.3):** fila, propósito y flujo de lectura de 20. Seguridad actualizados a v2.2.
+- **RFC-2026-002** (`RFC-2026-002-mapeo-owasp-agentic-top10.md`): registro formal según 26. Sistema RFC. Fuentes: OWASP GenAI Security Project (Top 10 for Agentic Applications, dic 2025), CSA research note (abr 2026), Microsoft agent-governance-toolkit (mar 2026).
+
+### Resultado del análisis
+
+- **Cobertura directa:** ASI03 (Identidad), ASI04 (Supply Chain), ASI05 (Ejecución inesperada).
+- **Cobertura parcial (comportamiento):** ASI01, ASI02, ASI06, ASI08, ASI09, ASI10.
+- **Laguna identificada:** ASI07 (comunicación inter-agentes sin regla dedicada) — candidata formal a RFC futura con evidencia de recurrencia (RFC-002/004). No se incorpora en esta versión.
+
 ## [1.1.0] - 2026-08-07
 
 Seguridad de la cadena de suministro e integridad del historial (RFC-2026-001, estado **Provisional**). Todo el cambio fue analizado frente al mapeo del ecosistema (Agentic AI Top 10 de OWASP; UNU "Engineering and Governing the Agent Harness"; Microsoft agent-governance-toolkit; NIST AI Agent Standards Initiative) antes de su incorporación.

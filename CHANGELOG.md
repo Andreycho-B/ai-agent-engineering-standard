@@ -4,6 +4,21 @@ Versionado semántico `MAYOR.MENOR.PARCHE` según GV-006 (27. Gobernanza del Est
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-08-16
+
+Corrección de defectos detectados en la revisión profunda del estándar. Cambio **PARCHE** (GV-006: corrección de errores, sin cambios normativos nuevos).
+
+### Correcciones
+
+- **29. Arquitectura del Estándar (v2.3):** cerrado el bloque de código de la "Plantilla de documento" (fence abierto desde el commit inicial) y reconstruida la sección "Plantilla de regla" (campos Prioridad, Regla, Justificación, Excepciones, Ejemplos, Dependencias, Verificación), que faltaba por completo.
+- **12. Ingeniería de Prompts (v1.1):** corregida la referencia cruzada en PRO-007 (línea 111) de "16. Arquitectura" a "17. Arquitectura".
+- **23. Principios de Ingeniería Avanzada:** cabecera alineada a v2.0 (el Índice Maestro y el contenido AV-007 ya la declaraban 2.0).
+- **32. Índice Maestro (v4.5):** actualizado a la nueva versión del estándar.
+
+### Deuda documentada
+
+- ARCH-008 (identificadores secuenciales) sigue referenciado en ARCH-006 sin sección definida en 29. Arquitectura del Estándar. La reconstrucción requiere evidencia del contenido original o una RFC que lo defina.
+
 ## [1.2.0] - 2026-08-16
 
 Catálogo de estéticas y firmas visuales de IA reconocibles en el capítulo de Anti-patrones de Diseño Visual. Cambio **MENOR** (GV-006: nuevas reglas compatibles que no rompen lo existente), formalizado como RFC-2026-003 (estado **Provisional**).

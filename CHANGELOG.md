@@ -4,6 +4,16 @@ Versionado semántico `MAYOR.MENOR.PARCHE` según GV-006 (27. Gobernanza del Est
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-08-16
+
+Catálogo de estéticas y firmas visuales de IA reconocibles en el capítulo de Anti-patrones de Diseño Visual. Cambio **MENOR** (GV-006: nuevas reglas compatibles que no rompen lo existente), formalizado como RFC-2026-003 (estado **Provisional**).
+
+### Contenido
+
+- **14. Anti-patrones de Diseño Visual (v2.2):** nueva familia **N. Estéticas y firmas visuales reconocibles de IA** con 7 filas (Linear, DevTools/Developer-First, Bento Grid, v0/Shadcn, Status/Pill Badge CI/CD, Brutalist Display, Editorial Bento/Neo-Brutalism). Prioridad CRÍTICA por defecto; hereda las Excepciones generales del capítulo. Referencias cruzadas desde las familias B, D y F (ARCH-004: referenciar, no duplicar).
+- **32. Índice Maestro (v4.4):** fila, propósito y flujo de lectura de 14. Anti-patrones Visuales actualizados a v2.2.
+- **RFC-2026-003** (`RFC-2026-003-catalogo-firmas-visuales-ia.md`): registro formal según 26. Sistema RFC. Evidencia: recurrencia observada en generadores de UI por IA (v0.dev, Lovable, Bolt.new) y estéticas de origen identificable (Linear.app, GitHub Actions, Vercel, Shadcn UI, fundiciones display).
+
 ## [1.1.1] - 2026-08-07
 
 Anexo de referencia: mapeo del capítulo de Seguridad contra el OWASP Top 10 for Agentic Applications (2026). Cambio **PARCHE** (GV-006: contenido de referencia, sin cambio normativo), formalizado como RFC-2026-002 (estado **Provisional**).

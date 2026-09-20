@@ -4,6 +4,21 @@ Versionado semántico `MAYOR.MENOR.PARCHE` según GV-006 (27. Gobernanza del Est
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-09-20
+
+Arquitectura de Alta Precisión ("El Enfoque del Relojero"): Ecosistema Frontend Awwwards, Backend en Go, Seguridad Criptográfica y Mitigación Sistemática de IA Slop. Cambio **MENOR** (GV-006: nuevas reglas técnicas compatibles que no rompen lo existente), formalizado como RFC-2026-004 (estado **Propuesta / Provisional**).
+
+### Contenido
+
+- **RFC-2026-004** (`RFC-2026-004-arquitectura-reloj-suizo-fullstack.md`): propuesta formal según 26. Sistema RFC.
+  - **Metodología del Relojero:** Arquitectura *Feature-driven*, tipado estricto al 100%, límite físico de 150–200 líneas por archivo y micro-ciclos obligatorios.
+  - **Frontend Especializado (15):** Astro + TS + GSAP + OGL para experiencias Awwwards cinéticas sin Virtual DOM; Svelte 5 (Runes) / SvelteKit para plataformas transaccionales multi-inquilino.
+  - **Backend y Contratos (16, 19):** Go (Golang) con `net/http` o `Chi`, gRPC/ConnectRPC (Protobuf) e integración de NATS.io (pub/sub interno) y Centrifugo (WebSockets en el cliente).
+  - **Base de Datos (18):** PostgreSQL con aislamiento multi-tenant (schemas/RLS) y acceso determinista vía `sqlc` (Go) y `Drizzle` (TS), prohibiendo ORMs pesados tipo Prisma/GORM en rutas críticas.
+  - **Seguridad (20):** Autenticación con Passkeys (WebAuthn/FIDO2) + Argon2id + Cookies HttpOnly/SameSite=Strict; mitigación de fuerza bruta vía Token Bucket y exponential backoff; mitigación de inyección SQL vía prepared statements al 100%; seguridad de cadena de suministro proactiva con `pnpm` y `Socket.dev`.
+  - **Infraestructura y Testing (22, 30):** OpenTofu (IaC), Cloudflare Pages/Edge, Fly.io (Firecracker microVMs), Biome/ESLint pre-commit y gates bloqueantes de Lighthouse CI.
+
+
 ## [1.2.1] - 2026-08-16
 
 Corrección de defectos detectados en la revisión profunda del estándar. Cambio **PARCHE** (GV-006: corrección de errores, sin cambios normativos nuevos).

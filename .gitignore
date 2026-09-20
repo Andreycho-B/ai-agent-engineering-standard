@@ -32,3 +32,7 @@ coverage/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# MCP y pruebas locales (GIT-004)
+.playwright-mcp/
+intro-*.png

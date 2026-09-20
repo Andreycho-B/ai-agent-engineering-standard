@@ -30,3 +30,7 @@ conversation_*.txt
 *.tmp
 *.cache
 *.draft
+
+# MCP y pruebas locales (GIT-004)
+.playwright-mcp/
+intro-*.png
